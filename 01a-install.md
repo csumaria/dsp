@@ -55,11 +55,11 @@ Did you install Python 2 or 3? Why?
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
 >> One can check the version of Python by typing the following command on the terminal
-```python
+```sh
 python --version
 ```
 >> And the output looks like the following:
-```python
+```sh
 Python 3.6.1 :: Anaconda 4.4.0 (64-bit)
 ```
 
