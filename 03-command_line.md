@@ -155,7 +155,8 @@ ls -Glp
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-**Answer:** The following are my favorites.
+**Answer:**  
+The following are my favorites:  
 | Option for the 'ls' command | Function    |  
 | ---   | ---    |  
 | -a |	Displays all files |  
