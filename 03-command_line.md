@@ -157,13 +157,13 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 **Answer:**  
 The following are my favorites:  
-| Option for the 'ls' command | Function    |  
-| ---   | ---    |  
-| -a |	Displays all files |  
-| -c |	Displays files by file timestamp |  
-| -d |	Displays only directories |  
-| -l | Displays in the list format |  
-|-u |	Displays files by the file access time |  
+ Option for the 'ls' command | Function      
+ ---   | ---      
+ -a |	Displays all files   
+ -c |	Displays files by file timestamp   
+ -d |	Displays only directories   
+ -l | Displays in the list format   
+-u |	Displays files by the file access time   
 
 
 ---
