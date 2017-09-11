@@ -48,16 +48,20 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> I installed Python 3 because Python 3 was recommended for thr course
+>> I installed Python 3 because Python 3 was recommended for the course
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
 >> One can check the version of Python by typing the following command on the terminal
->> ```python
-   python --version
-   ```
+```python
+python --version
+```
+>> And the output looks like the following:
+```python
+Python 3.6.1 :: Anaconda 4.4.0 (64-bit)
+```
 
  
 
