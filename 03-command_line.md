@@ -73,22 +73,20 @@ Don't overwrite but stick it to the end of the file baken
 chmod o-w baken
 chmod 754 baken
 ```
-user/owner permissions (rwx) group permissions (rwx) everyone else (r--)
-rwx = read write execute
-u = user
-g = group
-o = other people
-To change permissions, see example below:
-chmod o-w baken
-For easy manipulation, the code would look like:
-chmod 754 baken
-7,5,4 represent individual permissions for (in this order) user, group, other
-4 - stands for "read"
-2 - stands for "write"
-1 - stands for "execute"
-0 - stands for "no permissions"
-7 = 4 + 2 + 1 = u permissions of r+w+x
-5 = 4+1 = g permissions for r+x
+user/owner permissions (rwx) group permissions (rwx) everyone else (r--)  
+rwx = read write execute  
+u = user  
+g = group  
+o = other people  
+To change permissions, see example below:  
+For easy manipulation, the code would look like:  
+7,5,4 represent individual permissions for (in this order) user, group, other  
+4 - stands for "read"  
+2 - stands for "write"  
+1 - stands for "execute"  
+0 - stands for "no permissions"  
+7 = 4 + 2 + 1 = u permissions of r+w+x   
+5 = 4+1 = g permissions for r+x  
 
 ```sh
 bash file_name 
