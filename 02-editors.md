@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
-**Answer:** I think that vim would be my preferred choide of terminal editor as it is known to be widely applicable among other editors such as git. It is also fairly basic and easy to use.
+**Answer:** I think that *vim* would be my preferred choide of terminal editor as it is known to be widely distributed across applications. It is also fairly basic and easy to use.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-**Answer:** The graphical editor of my choice is Spyder. This is because Spyder is highly functional and includes numerous in-built modules. While PyCharm is also a highly functional IDE, it is not free.
+**Answer:** The graphical editor of my choice is *Spyder*. This is because *Spyder* is highly functional and includes numerous in-built modules. While *PyCharm* is also a highly functional IDE, it is not free.
 
  
