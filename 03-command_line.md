@@ -23,91 +23,89 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ```sh
 pwd
 ```
-Shows working directory
+> Shows working directory
 ```sh
 cd ../..
 ```
-Go all the way back to the root folder
+> Go all the way back to the root folder
 ```sh
 cat location/File_name 
 ```
-Open a file
+> Open a file
 
 ```sh
 mv name_of_file Location/new_name
 ```
-Move file to a location and deletes it from the original location
+> Move file to a location and deletes it from the original location
 ```sh
 mv name_of_file new_name
 ```
-Rename a file
+> Rename a file
 ```sh
 grep word_looking_for Name_of_file_in_main_folder 
 ```
-Searches for a word within a file
+> Searches for a word within a file
 ```sh
 diff file_1 file_2 
 ```
-Shows difference between 2 files in the main folder
+> Shows difference between 2 files in the main folder
 ```sh
 passwd 
 ```
-Changes password
+> Changes password
 ```sh
 NAME=Chintan
 ```
-Defines a variable NAME with value 'Chintan'
+> Defines a variable NAME with value 'Chintan'
 ```sh
 echo $NAME
 ```
-The command *echo* prints any variable or input that is entered after the command
+> The command *echo* prints any variable or input that is entered after the command
 ```sh
 ls > baken 
 ```
-Saves the results of 'ls' command into a file named Bacon
+> Saves the results of 'ls' command into a file named Bacon
 ```sh
 pwd >> baken 
 ```
-Don't overwrite but stick it to the end of the file baken
+> Don't overwrite but stick it to the end of the file baken
 ```sh
 chmod o-w baken
 chmod 754 baken
 ```
-user/owner permissions (rwx) group permissions (rwx) everyone else (r--)  
-rwx = read write execute  
-u = user  
-g = group  
-o = other people  
-To change permissions, see example below:  
-For easy manipulation, the code would look like:  
-7,5,4 represent individual permissions for (in this order) user, group and other  
-4 - stands for "read"  
-2 - stands for "write"  
-1 - stands for "execute"  
-0 - stands for "no permissions"  
-7 = 4 + 2 + 1 = u permissions of r+w+x   
-5 = 4+1 = g permissions for r+x  
+> user/owner permissions (rwx) group permissions (rwx) everyone else (r--)  
+> rwx = read write execute  
+> u = user  
+> g = group  
+> o = other people  
+> 7,5,4 represent individual permissions for (in this order) user, group and other  
+> 4 - stands for "read"  
+> 2 - stands for "write"  
+> 1 - stands for "execute"  
+> 0 - stands for "no permissions"  
+> 7 = 4 + 2 + 1 = u permissions of r+w+x   
+> 5 = 4+1 = g permissions for r+x  
 
 ```sh
 bash file_name 
 ```
-Executes the file as if it were being typed on a terminal
+> Executes the file as if it were being typed on a terminal
 ```sh
 gzip file_name 
 ```
-To compress a file to a .gz compressed file
+> To compress a file to a .gz compressed file
 ```sh
 gunzip file_name.zg 
 ```
-Decompresses file_name.zg
+> Decompresses file_name.zg
 ```sh
 ps 
 ```
-Lists all basic processes
+> Lists all basic processes
 ```sh
 kill process_id 
 ```
-Kills the program; note that process ID can be found by using 'ps' command
+> Kills the program; note that process ID can be found by using 'ps' command
 
 ---
 
@@ -126,31 +124,31 @@ What do the following commands do:
 ```sh
 ls
 ```
-Lists the contents of the current folder
+> Lists the contents of the current folder
 ```sh
 ls -a
 ```
-Lists all contents of the current folder including hidden files and system files
+> Lists all contents of the current folder including hidden files and system files
 ```sh
 ls -l
 ```
-Lists the contents of a folder as a list
+> Lists the contents of a folder as a list
 ```sh
 ls -lh
 ```
-The -h option prints memory sizes in a 'human-readable format' while the -l option displays the result as a list
+> The -h option prints memory sizes in a 'human-readable format' while the -l option displays the result as a list
 ```sh
 ls -lah
 ```
-The above combination of options lists all files (including system and hidden files) as a list with human-readable memory sizes
+> The above combination of options lists all files (including system and hidden files) as a list with human-readable memory sizes
 ```sh
 ls -t
 ```
-Displays the newest files first
+> Displays the newest files first
 ```sh
 ls -Glp
 ```
-Displays a list such that directories start with '/' 
+> Displays a list such that directories start with '/' 
 ---
 
 ### Q3.  More List Files in Unix  
@@ -158,6 +156,8 @@ Displays a list such that directories start with '/'
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 **Answer:** The following are my favorites.
+| Option for the 'ls' command | Function    |
+| ---   | ---    |
 | -a |	Displays all files |
 | -c |	Displays files by file timestamp |
 | -d |	Displays only directories |
