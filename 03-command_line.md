@@ -80,7 +80,7 @@ g = group
 o = other people  
 To change permissions, see example below:  
 For easy manipulation, the code would look like:  
-7,5,4 represent individual permissions for (in this order) user, group, other  
+7,5,4 represent individual permissions for (in this order) user, group and other  
 4 - stands for "read"  
 2 - stands for "write"  
 1 - stands for "execute"  
@@ -158,11 +158,11 @@ Displays a list such that directories start with '/'
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 **Answer:** The following are my favorites.
--a |	Displays all files
--c |	Displays files by file timestamp
--d |	Displays only directories
--l | Displays in the list format
--u |	Displays files by the file access time
+| -a |	Displays all files |
+| -c |	Displays files by file timestamp |
+| -d |	Displays only directories |
+| -l | Displays in the list format |
+| -u |	Displays files by the file access time |
 
 ---
 
