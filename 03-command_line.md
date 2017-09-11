@@ -156,13 +156,14 @@ ls -Glp
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 **Answer:** The following are my favorites.
-| Option for the 'ls' command | Function    |
-| ---   | ---    |
-| -a |	Displays all files |
-| -c |	Displays files by file timestamp |
-| -d |	Displays only directories |
-| -l | Displays in the list format |
-| -u |	Displays files by the file access time |
+| Option for the 'ls' command | Function    |  
+| ---   | ---    |  
+| -a |	Displays all files |  
+| -c |	Displays files by file timestamp |  
+| -d |	Displays only directories |  
+| -l | Displays in the list format |  
+|-u |	Displays files by the file access time |  
+
 
 ---
 
@@ -174,7 +175,7 @@ What does `xargs` do? Give an example of how to use it.
 ```sh
 xargs
 ```
-will ask for a standard input from the user, at which point entering *pwd* as standard input would execute the command *pwd* without invoking the shell.
+> The above command will ask for a standard input from the user, at which point entering *pwd* as standard input would execute the command *pwd* without invoking the shell.
 
 
  
