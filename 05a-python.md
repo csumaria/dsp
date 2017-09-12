@@ -66,7 +66,27 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> **Answer:** 937 days (see code below)
+```
+from datetime import date
+
+date_start = '01-02-2013'    
+date_stop = '07-28-2015'
+
+class extract_date_from_string():
+    def __init__(self, date):
+        self.day=int(date[3]+date[4])
+        self.month=int(date[0]+date[1])
+        self.year=int(date[6]+date[7]+date[8]+date[9])
+
+d1 = extract_date_from_string(date_start)
+d2 = extract_date_from_string(date_stop)
+
+date_start_c = date(d1.year, d1.month, d1.day)
+date_stop_c = date(d2.year, d2.month, d2.day)
+diff = date_stop_c - date_start_c
+print(diff.days)
+```
 
 b.  
 ```
@@ -74,7 +94,27 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> **Answer:** 513 days (see code below)
+```
+from datetime import date
+
+date_start = '12312013'  
+date_stop = '05282015'  
+
+class extract_date_from_string():
+    def __init__(self, date):
+        self.day=int(date[2]+date[3])
+        self.month=int(date[0]+date[1])
+        self.year=int(date[4]+date[5]+date[6]+date[7])
+
+d1 = extract_date_from_string(date_start)
+d2 = extract_date_from_string(date_stop)
+
+date_start_c = date(d1.year, d1.month, d1.day)
+date_stop_c = date(d2.year, d2.month, d2.day)
+diff = date_stop_c - date_start_c
+print(diff.days)
+```
 
 c.  
 ```
