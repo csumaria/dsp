@@ -51,13 +51,12 @@ def verbing(s):
             sl.append('n')
             sl.append('g') 
         return(''.join(sl))
-
+    
 def not_bad(s):
     not_cnt=0
     bad_cnt=0
     sl=list(s)
     sp=len(sl)
-    print(sp)
     for _ in range(0,sp):
         if sl[_]=='n' and sl[_+1]=='o' and sl[_+2]=='t':
             not_cnt=1
@@ -69,11 +68,8 @@ def not_bad(s):
                     bad_index_end = x+2
                     print(bad_index_end)
     if not_cnt==1 and bad_cnt==1:
-        print(sl)
         del sl[not_index_start:bad_index_end+2]
-        print(sl)
         new_index = not_index_start
-        print(new_index)
         sl.insert(new_index,'g')
         sl.insert(new_index+1,'o')
         sl.insert(new_index+2,'o')
@@ -84,21 +80,35 @@ def not_bad(s):
         return(s)
 
 
-
 def front_back(a, b):
-    """
-    Consider dividing a string into two halves. If the length is even,
-    the front and back halves are the same length. If the length is
-    odd, we'll say that the extra char goes in the front half. e.g.
-    'abcde', the front half is 'abc', the back half 'de'. Given 2
-    strings, a and b, return a string of the form a-front + b-front +
-    a-back + b-back
+    al=list(a)
+    ap=len(al)
+    bl=list(b)
+    bp=len(bl)
+    solution=[]
+    if ap%2==0:
+        for _ in range(0,int(ap/2)):
+            solution.append(al[_])
+    else:
+        for _ in range(0,int(ap/2)+1):
+            solution.append(al[_])
+    if bp%2==0:
+        for _ in range(0,int(bp/2)):
+            solution.append(bl[_])
+    else:
+        for _ in range(0,int(bp/2)+1):
+            solution.append(bl[_])
+    if ap%2==0:
+        for _ in range(int(ap/2),ap):
+            solution.append(al[_])
+    else:
+        for _ in range(int(ap/2)+1,ap):
+            solution.append(al[_])
+    if bp%2==0:
+        for _ in range(int(bp/2),bp):
+            solution.append(bl[_])
+    else:
+        for _ in range(int(bp/2)+1,bp):
+            solution.append(bl[_])
+    return(''.join(solution))
 
-    >>> front_back('abcd', 'xy')
-    'abxcdy'
-    >>> front_back('abcde', 'xyz')
-    'abcxydez'
-    >>> front_back('Kitten', 'Donut')
-    'KitDontenut'
-    """
-    raise NotImplementedError
