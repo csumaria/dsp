@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> A tuple can be defined by a values separated with commas while a list is a set of numbers or strings separated by commas within []. Lists are defined with square brackets [], whereas tuples are represented with parentheses (). While both data types can be indexed and nested, tuples are immutable (individual assignment is not possible). However, tuples can contain lists that are mutable. Tuples are better suited as keys in dictionaries as they immutable, and are unlikely to disrupt key:value pairs in a dictionary.
+>> A tuple can be defined by a values separated with commas while a list is a set of numbers or strings separated by commas within `[]`. Lists are defined with square brackets `[]`, whereas tuples are represented with parentheses `()`. While both data types can be indexed and nested, tuples are immutable (individual assignment is not possible). However, tuples can contain lists that are mutable. Tuples are better suited as keys in dictionaries as they immutable, and are unlikely to disrupt key:value pairs in a dictionary.
 
 ---
 
@@ -28,8 +28,8 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> Lambda is a small anonymous 'single expression' function. See example below:
->> ```python
+>> `lambda` is a small anonymous 'single expression' function. See example below:
+```
 nested_list = [(5, 6, 7, 8), (1, 2, 3, 4), (2, 3, 4, 5), (3, 4, 5, 6), (4, 5, 6, 7)]
 nested_list.sort(key=lambda tuple: tuple[0])
 print(nested_list)
@@ -41,8 +41,8 @@ print(nested_list)
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> A list comprehension is the ability to create a list by including an expression followed by a **for** clause, followed by any number of **for** or **if** clauses. 
-```python
+>> A list comprehension is the ability to create a list by including an expression followed by a `for` clause, followed by any number of `for` or `if` clauses. 
+```
 # Here is a list of numbers for pH range
 def x_v(p):
     return p
