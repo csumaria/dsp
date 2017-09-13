@@ -11,21 +11,18 @@ def match_ends(words):
     return(cnt)
 
 def front_x(words):
-    """
-    Given a list of strings, return a list with the strings in sorted
-    order, except group all the strings that begin with 'x' first.
-    e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
-         ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
-
-    >>> front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
-    ['xaa', 'xzz', 'axx', 'bbb', 'ccc']
-    >>> front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
-    ['xaa', 'xcc', 'aaa', 'bbb', 'ccc']
-    >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
-    ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
-    """
-    raise NotImplementedError
-
+    ans = []
+    a_x=[]
+    a_o=[]
+    for _ in range(0,len(words)):
+        if words[_][0]=='x':
+            a_x.append(words[_])
+        else:
+            a_o.append(words[_])
+    a_x.sort()
+    a_o.sort()
+    ans=a_x+a_o
+    return(ans)
 
 def sort_last(tuples):
     """
