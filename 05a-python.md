@@ -104,4 +104,3 @@ Write a script as indicated (using the football data) in [q8_parsing.py](python/
 
 
 
-
