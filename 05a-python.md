@@ -84,17 +84,17 @@ date_stop = '14-Jul-2015'
 
 >> **Answer:** 7850 days  
 
-See code in this file: [q5_datetime.py](python/q5_datetime.py)
+For answer, please see code in this file: [q5_datetime.py](python/q5_datetime.py)
 
 ---
 
 ### Q6. Strings
-Edit the 7 functions in [q6_strings.py](python/q6_strings.py)
+For answer, please see the 7 functions in [q6_strings.py](python/q6_strings.py)
 
 ---
 
 ### Q7. Lists
-Edit the 5 functions in [q7_lists.py](python/q7_lists.py)
+For answer, please see the 5 functions in [q7_lists.py](python/q7_lists.py)
 
 ---
 
