@@ -1,6 +1,11 @@
-# The football.csv file contains the results from the English Premier League. 
-# The columns labeled ‘Goals’ and ‘Goals Allowed’ contain the total number of 
-# goals scored for and against each team in that season (so Arsenal scored 79 goals 
-# against opponents, and had 36 goals scored against them). Write a program to read the file, 
-# then print the name of the team with the smallest difference in ‘for’ and ‘against’ goals.
-
+import pandas
+data=pandas.read_csv('football.csv', low_memory=False)
+diff = data['Goals'] - data['Goals Allowed']
+l_diff=(len(data['Goals']))
+min=100
+min_index=0
+for _ in range(0,l_diff):
+    if diff[_]<=min:
+        min=diff[_]
+        min_index=_
+print('The team with the smallest difference in for and against goals is '+str(data['Team'][min_index]))
