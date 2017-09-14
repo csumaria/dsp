@@ -58,23 +58,24 @@ def not_bad(s):
     sl=list(s)
     sp=len(sl)
     for _ in range(0,sp):
-        if sl[_]=='n' and sl[_+1]=='o' and sl[_+2]=='t':
-            not_cnt=1
+        if sl[_]=='n' and sl[_+1]=='o' and sl[_+2]=='t' and sl[_+3!=' ']:
+            if sl[_-1]!=' ' and _!=0:
+                break
+            not_cnt=not_cnt+1
             not_index_start=_
-            print(not_index_start)
             for x in range((_+2),sp):
-                if sl[x]=='b' and sl[x+1]=='a' and sl[x+2]=='d':
-                    bad_cnt=1
-                    bad_index_end = x+2
-                    print(bad_index_end)
-    if not_cnt==1 and bad_cnt==1:
-        del sl[not_index_start:bad_index_end+2]
+                if sl[x-1]==' ' and sl[x]=='b' and sl[x+1]=='a' and sl[x+2]=='d':
+                    bad_cnt=bad_cnt+1
+                    if bad_cnt==1:
+                        bad_index_end = x+2
+    if not_cnt>=1 and bad_cnt>=1:
+        del sl[not_index_start:bad_index_end+1]
         new_index = not_index_start
         sl.insert(new_index,'g')
         sl.insert(new_index+1,'o')
         sl.insert(new_index+2,'o')
         sl.insert(new_index+3,'d')
-        sl.insert(new_index+4,' ')  
+        #sl.insert(new_index+4,' ')  
         return(''.join(sl))
     else:
         return(s)
