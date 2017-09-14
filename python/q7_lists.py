@@ -29,8 +29,14 @@ def sort_last(tuples):
     return(tuples)
 
 def remove_adjacent(nums):
-    b=set(nums)
-    return(list(b))
+    prev=-1555652656
+    new_list=[]
+    for _ in range(0,len(nums)):
+        if nums[_]!=prev:
+            prev=nums[_]
+            new_list.append(prev)
+           
+    return(new_list) 
 
 def linear_merge(list1, list2):
     list_c = list1 + list2
